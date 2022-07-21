@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc cabos</title>
+    <link rel="stylesheet" href="inicio.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de seção de cabos</h1>
+            <nav>
+                <a href="">Histórico</a>
+                <a href="">Dicas</a>
+            </nav>
+        </header>
+        <section>
+            <form class="formulario_inicio" id="formulario_inicio">
+                <label>Seu estado: </label>
+                <select id="estado">
+                    <option value=""></option>
+                    <optgroup label="Tensão fase-neutro = 110V">
+                        <option value="110">Amapá</option>
+                        <option value="110">Pará</option>
+                    </optgroup>
+                    <optgroup label="Tensão fase-neutro = 220V">
+                        <option value="220">Alagoas</option>
+                        <option value="220">Maranhão</option>
+                        <option value="220">Piauí</option>
+                        <option value="220">Rio grande do norte</option>
+                    </optgroup>
+                </select>
+                <label for="unidade">Unidade de potência da carga: </label>
+                <select name="unidade" id="unidade">
+                    <option value=""></option>
+                    <option value="va">Volt-Amper</option>
+                    <option value="watts">Watts</option>
+                </select>
+            </form>
+            <button id="prosseguir" onclick="prosseguir()">Prosseguir</button>
+        </section>
+    </div>
+</body>
+</html>

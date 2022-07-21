@@ -1,0 +1,64 @@
+
+:root{
+    --max_width: 500px;
+    --min_width: 250px;
+    --heigth: 300px; 
+}
+
+body{
+    background-color: rgb(30, 30, 60);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-size: 0.8em;
+    padding-top: 20px;
+    background-color: rgba(240, 248, 255, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header>nav>a{
+    font-size: 20px;
+    margin: 0 30px 0 30px;
+    text-decoration: none;
+}
+
+nav{
+    padding-bottom: 20px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+select{
+    text-align: center;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+}
+
+.container{
+    background-color: rgba(240, 248, 255, 0.7);
+    width: auto;
+    max-width: var(--max_width);
+    min-width: var(--min_width);
+    height: 50vh;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 10px;
+}
+

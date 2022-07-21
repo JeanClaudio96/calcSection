@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="dados.css">
+    <script src="script.js"></script>
+</head>
+
+<body  onload="onLoad()">
+    <div class="container">
+        <header>
+            <h1>Preencha abaixo com os dados pertinentes do circuito:</h1>
+            <nav>
+                <a href="historico.html" target="_self">Histórico</a>
+                <a href="" onclick="dicas()">Dicas</a>
+            </nav>
+        </header>
+        <section>
+            <form class="formulario_dados">
+                <label for="carga">Carga</label>
+                    <input type="text" name="carga" id="carga">
+                <label for="tipo">Tipo de circuito</label>
+                    <select name="tipo" id="tipo">
+                        <option value=""></option>
+                        <option value="ilum">Iluminação</option>
+                        <option value="tug">Tomadas de uso geral</option>
+                        <option value="resistivos">Equipamentos resistivos</option>
+                        <option value="motor">Motores (até 5cv)</option>
+                        <option value="ar">Ar condicionado</option>
+                        <option value="solda">Máquina de solda</option>
+                    </select>
+                <label for="alimentacao">Tipo de alimentação</label>
+                    <select name="alimentacao" id="alimentacao">
+                        <option value=""></option>
+                        <option value="1">1F, 1N</option>
+                        <option value="1">1F, 1N, 1T</option>
+                        <option value="3">3F, 1T</option>
+                        <option value="3">3F, 1N, 1T</option>
+                    </select>
+                <label name="fp" id="fp_label" for="fp">Fator de potência</label>
+                    <input type="text" name="fp" id="fp">
+                <label for="metodo">Método de instalação</label>
+                    <select name="metodo" id="metodo">
+                        <option value=""></option>
+                        <option value="A1">A1</option>
+                        <option value="A2">A2</option>
+                        <option value="B1">B1</option>
+                        <option value="B2">B2</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                <label for="fca">Fator de correção de agrupamento</label>
+                    <select name="fca" id="fca">
+                        <option value=""></option>
+                        <option value="1.0">1</option>
+                        <option value="0.96">0,96</option>
+                        <option value="0.7">0,7</option>
+                    </select>
+                <label for="fct">Fator de correção de temperatura</label>
+                    <select name="fct" id="fct">
+                        <option value=""></option>
+                        <option value="1.0">1</option>
+                        <option value="0.96">0,96</option>
+                        <option value="0.7">0,7</option>
+                    </select>
+                <label for="distancia">Maior trecho do circuito (m)</label>
+                    <input type="text" name="distancia" id="distancia">
+            </form>
+            <button type="button" id="voltar" onclick="voltar()">Voltar</button>
+            <button type="button" id="calcular" onclick="calcular()">Calcular</button>
+        </section>
+    </div>
+</body>
+</html>
